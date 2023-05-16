@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar a Arem</title>
+    <!-- logo de la pestaña -->
+    <link rel="shortcut icon" href="pestaña.png" type="image/x-icon">
+    <!-- hoja de estilo -->
+    <link rel="stylesheet" href="ingresar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body class="body">
+    <button class="boton-mode" ><i class='bi bi-moon-fill'></i></button>
+    <div class="divRisa"></div>
+    <a href="#"><img id="homero" src="/homero-ingresar.png" alt=""></a>
+
+    <form class="formulario" action="">
+        <h1 class="title">Arem</h1>
+        <label for="usuario">
+            <i class="fa-solid fa-user"></i>
+            <input required placeholder="nombre de usuario" type="text" id="usuario">
+        </label>
+        <label for="contrasena">
+            <i class="fa-solid fa-lock"></i>
+            <input required minlength="5" maxlength="15" placeholder="contraseña" type="password" id="contrasena">
+            <span class="validity"></span>
+        </label>
+            <a href="#" id="link-olvide">¿Olvidaste tu contraseña?</a>
+            <button id="boton-ingresar" type="button">ingresar</button>
+    </form>
+    
+    <div id="campo-para-mensajes">
+
+    </div>
+
+    
+    <script src="https://kit.fontawesome.com/1eaa4d8a9c.js" crossorigin="anonymous"></script>
+    <script src="ingresar.js"></script>
+</body>
+</html>

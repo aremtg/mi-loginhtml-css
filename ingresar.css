@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=Rock+Salt&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/*homero escondido*/
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background:rgb(95, 245, 212);
+}
+.modo-noche {
+    background:rgb(28, 48, 161);
+}
+.boton-mode {
+    position: absolute;
+    max-width: 2rem;
+    height: 2rem;
+    padding: .25rem;
+    background: rgb(255, 238, 0);
+    box-shadow: 3px 3px rgb(255, 166, 0);
+    border-radius: 10%;
+    border: none;
+    color: rgb(0, 0, 0);
+    top: 5%;
+    left: 3%;
+    cursor: pointer;
+}
+
+/*icon sol*/
+.boton-mode .bi-brightness-high-fill {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+/*icon luna*/
+.boton-mode .bi-moon-fill {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+#homero {
+    width: 305px;
+    height: 130px;
+    position: absolute;
+    top: 2.43rem;
+    margin-left: 12px;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    text-align: center;
+    padding: 10px 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgb(21, 21, 21);
+}
+
+form .title {
+    color: black;
+    font-size: 33px;
+    font-weight: 800;
+    font-family: 'Rock Salt';
+}
+
+/*como cada cajita donde estan los imput contra y usuario*/
+form label {
+    margin: 5px;
+}
+
+form label i {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+form label input {
+    outline: none;
+    border: none;
+    color: black;
+    border-bottom: solid 1px black;
+    padding: 0 6px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.validity {
+    position: absolute;
+    margin-left: -20px;
+}
+
+input:invalid+span::after {
+    position: absolute;
+    content: '✘';
+    color: red;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+input:valid+span::after {
+    position: absolute;
+    content: '✓';
+    color: rgb(153, 255, 0);
+    font-weight: 800;
+    font-size: 20px;
+}
+
+form label input::placeholder {
+    color: rgb(162, 176, 176);
+}
+
+form #link-olvide {
+    margin-top: 5px;
+    margin-bottom: 13px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(0, 4, 255);
+    font-family: 'Poppins', sans-serif;
+}
+
+form #boton-ingresar {
+    width: 100%;
+    height: 24px;
+    background: aqua;
+    border: none;
+    border-radius: 10px;
+    font-weight: 800;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+
+}
+
+/*olvidaste tu contraseña*/
+#contenedor-mensaje {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    max-width: 500px;
+    height: max-content;
+    top: 0;
+    left: 27rem;
+    padding: 1rem;
+    padding-bottom: .5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: .50rem;
+    font-family: 'Poppins', sans-serif;
+    gap: .25rem;
+    box-shadow: 0 5px 10px rgb(21, 21, 21);
+}
+
+#contenido-mensaje {
+    width: 100%;
+    text-align: center;
+}
+
+#boton-cerrar-mensaje {
+    width: max-content;
+    background: aqua;
+    border: 0.9px rgb(34, 235, 235) solid;
+    border-radius: .25rem;
+    padding: .25rem;
+    cursor: pointer;
+    display: flex;
+    margin-right: .25rem;
+    font-family: 'Poppins', sans-serif;
+}
