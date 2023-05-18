@@ -46,20 +46,20 @@
 }
 
 #homero {
-    width: 305px;
-    height: 130px;
+    margin: auto;
     position: absolute;
-    top: 2.43rem;
-    margin-left: 12px;
-    
+    top:7.33rem;
+    width: 320px; 
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+    width: 340px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(1);
     background: white;
     text-align: center;
-    padding: 10px 30px 20px;
+    padding: 10px 30px;
     border-radius: 20px;
     box-shadow: 0 5px 10px rgb(21, 21, 21);
 }
@@ -72,9 +72,7 @@ form .title {
 }
 
 /*como cada cajita donde estan los imput contra y usuario*/
-form label {
-    margin: 5px;
-}
+
 
 form label i {
     font-size: 20px;
@@ -118,8 +116,6 @@ form label input::placeholder {
 }
 
 form #link-olvide {
-    margin-top: 5px;
-    margin-bottom: 13px;
     font-size: 14px;
     font-weight: 700;
     color: rgb(0, 4, 255);
@@ -128,7 +124,7 @@ form #link-olvide {
 
 form #boton-ingresar {
     width: 100%;
-    height: 24px;
+    height: 34px;
     background: aqua;
     border: none;
     border-radius: 10px;
@@ -142,10 +138,10 @@ form #boton-ingresar {
 /*olvidaste tu contraseña*/
 #contenedor-mensaje {
     position: absolute;
-    background: rgb(255, 255, 255);
+    background: rgb(243, 208, 208);
     max-width: 500px;
     height: max-content;
-    top: 0;
+ 
     left: 27rem;
     padding: 1rem;
     padding-bottom: .5rem;
@@ -164,8 +160,8 @@ form #boton-ingresar {
 
 #boton-cerrar-mensaje {
     width: max-content;
-    background: aqua;
-    border: 0.9px rgb(34, 235, 235) solid;
+    background: rgb(255, 255, 0);
+    border: 0.9px rgb(235, 198, 34) solid;
     border-radius: .25rem;
     padding: .25rem;
     cursor: pointer;
