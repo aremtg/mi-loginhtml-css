@@ -19,6 +19,7 @@ $filaDeArriba = mysqli_num_rows($query);
 if($filaDeArriba == 1){
     echo "muy bien, hola ".$usuario_ingresado;
 }else if($filaDeArriba == 0){
-    echo "error tatiana";
+    header("location: login.html");
+    // echo "error tatiana";
 }
 ?>

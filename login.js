@@ -8,7 +8,7 @@
 // // trayendo valor de usuarios del localstorage
 // const usuGuardado = localStorage.getItem("usuarioInvitado");
 // const conGuardado = localStorage.getItem("contrasenaInvitado");
-// let focusUsuario = document.querySelector("#usuario");
+let focusUsuario = document.querySelector("#usuario");
 focusUsuario.focus();
 
 // botonIngresar.addEventListener("click", ir);
@@ -17,7 +17,6 @@ focusUsuario.focus();
 //     const usuIngresado = document.querySelector("#usuario").value;
 //     const conIngresado = document.querySelector("#contrasena").value;
 //     if(usuIngresado === usuGuardado && conIngresado === conGuardado ){
-//         //alert(usuIngresado + " es igual a " + usuGuardado , conIngresado + " es igual a " + conGuardado);
 //         location.href = "/index.html";
 //     }else if(usuIngresado === "" || conIngresado === ""){
 //         alert("ingrese un nombre de usuario y una contraseña");
@@ -43,11 +42,13 @@ focusUsuario.focus();
 // }
 
 //evento para mostar un mensaje-de recordar contraseña 
-let linkOlvide = document.querySelector("#link-olvide");
+let linkOlvide = document.querySelector("#olvide");
 let campoMensajes = document.querySelector("#campo-para-mensajes");
 linkOlvide.addEventListener("click", crearMensajeOlvideContrasena);
 
 function crearMensajeOlvideContrasena(){
+    const botonIngresar = document.querySelector("#boton-ingresar");
+    botonIngresar.disabled = true;
    campoMensajes.innerHTML=
    `<div id="contenedor-mensaje">
         <h3 id="titulo-mensaje">¿olvidaste tu contraseña?</h3> <!-- titulo -->
@@ -64,6 +65,7 @@ function crearMensajeOlvideContrasena(){
 
     function cerrarMensaje(){
     campoMensajes.innerHTML= "";
+    botonIngresar.disabled = false;
     }
     const dosBotones = document.querySelector("#dos-botones");
     dosBotones.style=`

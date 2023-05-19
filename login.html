@@ -8,26 +8,25 @@
     <!-- logo de la pestaña -->
     <link rel="shortcut icon" href="pestaña.png" type="image/x-icon">
     <!-- hoja de estilo -->
-    <link rel="stylesheet" href="ingresar.css">
+    <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 <body class="body">
-    <button class="boton-mode" ><i class='bi bi-moon-fill'></i></button>
-    <div class="divRisa"></div>
+    <div class="boton-mode" ><i class='bi bi-moon-fill'></i></div>
+    
     <a href="#"><img id="homero" src="homero-ingresar.png" alt=""></a>
 
     <form class="formulario" action="conexion.php" method="post">
-        <h1 class="title">Arem</h1>
+        <h1 class="titulo">HomerBook</h1>
         <label for="usuario">
             <i class="fa-solid fa-user"></i>
             <input required placeholder="nombre de usuario" type="text" name="usuario" id="usuario">
         </label>
         <label for="contrasena">
             <i class="fa-solid fa-lock"></i>
-            <input required minlength="5" maxlength="15" placeholder="contraseña" name="contrasena" type="password" id="contrasena">
-            <span class="validity"></span>
+            <input placeholder="contraseña" name="contrasena" type="password" id="contrasena">
         </label>
-            <a href="#" id="link-olvide">¿Olvidaste tu contraseña?</a>
+            <a href="#" id="olvide">¿Olvidaste tu contraseña?</a>
             <input id="boton-ingresar" value="Ingresar" type="submit"></input>
     </form>
     
@@ -37,6 +36,6 @@
 
     
     <script src="https://kit.fontawesome.com/1eaa4d8a9c.js" crossorigin="anonymous"></script>
-    <script src="ingresar.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>
