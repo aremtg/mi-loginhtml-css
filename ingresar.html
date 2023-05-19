@@ -14,21 +14,21 @@
 <body class="body">
     <button class="boton-mode" ><i class='bi bi-moon-fill'></i></button>
     <div class="divRisa"></div>
-    <a href="#"><img id="homero" src="/homero-ingresar.png" alt=""></a>
+    <a href="#"><img id="homero" src="homero-ingresar.png" alt=""></a>
 
-    <form class="formulario" action="">
+    <form class="formulario" action="conexion.php" method="post">
         <h1 class="title">Arem</h1>
         <label for="usuario">
             <i class="fa-solid fa-user"></i>
-            <input required placeholder="nombre de usuario" type="text" id="usuario">
+            <input required placeholder="nombre de usuario" type="text" name="usuario" id="usuario">
         </label>
         <label for="contrasena">
             <i class="fa-solid fa-lock"></i>
-            <input required minlength="5" maxlength="15" placeholder="contraseña" type="password" id="contrasena">
+            <input required minlength="5" maxlength="15" placeholder="contraseña" name="contrasena" type="password" id="contrasena">
             <span class="validity"></span>
         </label>
             <a href="#" id="link-olvide">¿Olvidaste tu contraseña?</a>
-            <button id="boton-ingresar" type="button">ingresar</button>
+            <input id="boton-ingresar" value="Ingresar" type="submit"></input>
     </form>
     
     <div id="campo-para-mensajes">

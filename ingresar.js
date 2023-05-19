@@ -1,49 +1,49 @@
 
 //------------------------------------------
 //guardando-usuario 
-localStorage.setItem("usuarioInvitado", "admin");
-localStorage.setItem("contrasenaInvitado", "admin");
+// localStorage.setItem("usuarioInvitado", "admin");
+// localStorage.setItem("contrasenaInvitado", "admin");
 
-const botonIngresar = document.querySelector("#boton-ingresar");
-// trayendo valor de usuarios del localstorage
-const usuGuardado = localStorage.getItem("usuarioInvitado");
-const conGuardado = localStorage.getItem("contrasenaInvitado");
-let focusUsuario = document.querySelector("#usuario");
+// const botonIngresar = document.querySelector("#boton-ingresar");
+// // trayendo valor de usuarios del localstorage
+// const usuGuardado = localStorage.getItem("usuarioInvitado");
+// const conGuardado = localStorage.getItem("contrasenaInvitado");
+// let focusUsuario = document.querySelector("#usuario");
 focusUsuario.focus();
 
-botonIngresar.addEventListener("click", ir);
+// botonIngresar.addEventListener("click", ir);
 
-function ir(){
-    const usuIngresado = document.querySelector("#usuario").value;
-    const conIngresado = document.querySelector("#contrasena").value;
-    if(usuIngresado === usuGuardado && conIngresado === conGuardado ){
-        //alert(usuIngresado + " es igual a " + usuGuardado , conIngresado + " es igual a " + conGuardado);
-        location.href = "/index.html";
-    }else if(usuIngresado === "" || conIngresado === ""){
-        alert("ingrese un nombre de usuario y una contraseña");
-    }
-    else{
-        let campoMensajes = document.querySelector("#campo-para-mensajes");
+// function ir(){
+//     const usuIngresado = document.querySelector("#usuario").value;
+//     const conIngresado = document.querySelector("#contrasena").value;
+//     if(usuIngresado === usuGuardado && conIngresado === conGuardado ){
+//         //alert(usuIngresado + " es igual a " + usuGuardado , conIngresado + " es igual a " + conGuardado);
+//         location.href = "/index.html";
+//     }else if(usuIngresado === "" || conIngresado === ""){
+//         alert("ingrese un nombre de usuario y una contraseña");
+//     }
+//     else{
+//         let campoMensajes = document.querySelector("#campo-para-mensajes");
 
-            campoMensajes.innerHTML=
-            `<div id="contenedor-mensaje">
-                 <h3 id="titulo-mensaje">Usuario Incorrecto</h3> <!-- titulo -->
-                 <span id="contenido-mensaje">Por favor ingrese un usuario y contraseña valido... verifique si ya esta registrado</span> <!-- contenido -->
-                 <button id="boton-cerrar-mensaje" type="button">Cerrar</button> <!-- boton -->
-             </div>`;
-             const h3Titulo = document.querySelector("#titulo-mensaje");
-             h3Titulo.style=`color: red; text-align: center;`
-             const botonCerrar = document.querySelector("#boton-cerrar-mensaje");
-             botonCerrar.addEventListener("click", cerrarMensaje)
+//             campoMensajes.innerHTML=
+//             `<div id="contenedor-mensaje">
+//                  <h3 id="titulo-mensaje">Usuario Incorrecto</h3> <!-- titulo -->
+//                  <span id="contenido-mensaje">Por favor ingrese un usuario y contraseña valido... verifique si ya esta registrado</span> <!-- contenido -->
+//                  <button id="boton-cerrar-mensaje" type="button">Cerrar</button> <!-- boton -->
+//              </div>`;
+//              const h3Titulo = document.querySelector("#titulo-mensaje");
+//              h3Titulo.style=`color: red; text-align: center;`
+//              const botonCerrar = document.querySelector("#boton-cerrar-mensaje");
+//              botonCerrar.addEventListener("click", cerrarMensaje)
          
-             function cerrarMensaje(){
-             campoMensajes.innerHTML= "";
-             }
-    }
-}
+//              function cerrarMensaje(){
+//              campoMensajes.innerHTML= "";
+//              }
+//     }
+// }
 
 //evento para mostar un mensaje-de recordar contraseña 
-const linkOlvide = document.querySelector("#link-olvide");
+let linkOlvide = document.querySelector("#link-olvide");
 let campoMensajes = document.querySelector("#campo-para-mensajes");
 linkOlvide.addEventListener("click", crearMensajeOlvideContrasena);
 
