@@ -42,7 +42,7 @@ focusUsuario.focus();
 // }
 
 //evento para mostar un mensaje-de recordar contraseña 
-let linkOlvide = document.querySelector("#olvide");
+let linkOlvide = document.querySelector(".olvide");
 let campoMensajes = document.querySelector("#campo-para-mensajes");
 linkOlvide.addEventListener("click", crearMensajeOlvideContrasena);
 
