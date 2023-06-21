@@ -2,12 +2,12 @@
 $dbhost = "localhost";
 $dbuser = "root";
 $dbpass = "";
-$db = "homerbook";
+$db_login = "homerbook";
 
-$conn = mysqli_connect($dbhost, $dbuser, $dbpass, $db);
+$conn = mysqli_connect($dbhost, $dbuser, $dbpass, $db_login);
 
 if(!$conn){
-    die("no hay conexion tatis: ".mysqli_connect_error());
+    die("no hay conexion tat: ".mysqli_connect_error());
 }
 $usuario_ingresado = $_POST["usuario"];
 $contrasena_ingresada = $_POST["contrasena"];
@@ -22,4 +22,7 @@ if($existeElUsuario == 1){
     header("location: login.html");
     // echo "error tatiana";
 }
+
+
+
 ?>

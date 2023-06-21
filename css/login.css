@@ -44,9 +44,18 @@
     font-size: 30px;
 }
 
+<<<<<<< HEAD:css/login.css
 .homero{
     width: 320px;
     
+=======
+#homero {
+    margin: auto;
+    position: absolute;
+    top:7.33rem;
+    right: 50.1rem;
+    width: 320px; 
+>>>>>>> 3ae8c8500aa3d225282792cf23b2bca4c12acc07:login.css
 }
 
 form {
