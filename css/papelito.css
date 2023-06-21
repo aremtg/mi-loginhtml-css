@@ -30,7 +30,6 @@ body{
     flex-direction: column;
 }
 .hoja{
-    width:380px;
     padding: 5px 10px;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);

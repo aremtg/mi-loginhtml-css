@@ -69,9 +69,9 @@ INSERT INTO `targeta` (`id_targeta`, `id_usuario`, `id_libro`, `fecha`) VALUES
 
 CREATE TABLE `usuarios` (
   `id_usuario` int(11) NOT NULL,
-  `nombreusuario` varchar(70) NOT NULL,
+  `nombre` varchar(70) NOT NULL,
   `correo` varchar(70) NOT NULL,
-  `codigo` int(10) DEFAULT NULL
+  `codigo` int(70) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --

@@ -1,25 +1,19 @@
 <?php
-$dbhost = "localhost";
-$dbuser = "root";
-$dbpass = "";
-$db_login = "homerbook";
 
-$conn = mysqli_connect($dbhost, $dbuser, $dbpass, $db_login);
 
-if(!$conn){
-    die("no hay conexion tat: ".mysqli_connect_error());
-}
-$usuario_ingresado = $_POST["usuario"];
+$usuario_ingresado = $_POST["correo"];
 $contrasena_ingresada = $_POST["contrasena"];
 
+#se hace la consulta para ver si existe ese usuario ingresado en la bd
+$query = mysqli_query($conn, "SELECT * FROM usuarios WHERE correo = '".$usuario_ingresado."' and codigo = '".$contrasena_ingresada."'");
+#en la variable columnasAfectadas se guarda inf de lo que afecto la consulta hecha en $query.
+$columnasAfectadas = mysqli_num_rows($query);
 
-$query = mysqli_query($conn, "SELECT * FROM usuarios WHERE nombreusuario = '".$usuario_ingresado."' and codigo = '".$contrasena_ingresada."'");
-$existeElUsuario = mysqli_num_rows($query);
-
-if($existeElUsuario == 1){
-    header("location: vistas/papelito.php");
-}else if($existeElUsuario == 0){
-    header("location: login.html");
+#si la consulta encontro algo 
+if($columnasAfectadas == 1){
+    header("location: vistas/casa.php");
+}else if($columnasAfectadas == 0){
+    header("location: login.php");
     // echo "error tatiana";
 }
 

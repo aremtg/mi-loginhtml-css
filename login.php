@@ -5,10 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingresar a Arem</title>
-    <!-- logo de la pestaña -->
-    <link rel="shortcut icon" href="pestaña.png" type="image/x-icon">
     <!-- hoja de estilo -->
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="css/entrar.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 <body class="body">
@@ -34,7 +32,6 @@
     <div id="campo-para-mensajes">
 
     </div>
-
 
     <script src="https://kit.fontawesome.com/1eaa4d8a9c.js" crossorigin="anonymous"></script>
     <script src="javas/login.js"></script>
