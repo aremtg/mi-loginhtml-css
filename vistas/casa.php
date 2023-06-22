@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>inicio de sesion</title>
-    <link rel="stylesheet" href="../css/estilos_casa.css">
+    <link rel="stylesheet" href="../css/casa.css">
 </head>
 <body>
-    <header>
-        <img src="logopapel.png" class="logopapel" alt="logo">
+    <section class="nav-box">
+        <img src="../imagenes/logoSena.svg" class="logo" alt="logo">
         <nav>
         <ul class="nav_lista">
             <li>
@@ -25,9 +25,9 @@
             </li>
         </ul>
         </nav>
-    </header>
-
-    <section>
+    </section>
+        
+    <section class="contenido">
         <h4>Nueva forma de crear permisos</h4>
         <hr>
         <p>
@@ -40,9 +40,7 @@
             sint eos animi soluta possimus neque debitis quisquam distinctio nobis.
         </p>
     </section>
-    <section>
-
-    </section>
+    
     <script src="https://kit.fontawesome.com/1eaa4d8a9c.js" crossorigin="anonymous"></script>
 </body>
 </html>
