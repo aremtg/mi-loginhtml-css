@@ -11,9 +11,9 @@
 </head>
 <body class="body">
     <div class="boton-mode" ><i class='bi bi-moon-fill'></i></div>
-    <a href="#"><img class="homero" src="homero-ingresar.png" alt=""></a>
+    <a href="#"><img class="homero" src="../homero-ingresar.png" alt=""></a>
 
-    <form class="formulario" action="conexion.php" method="post">
+    <form class="formulario" action="../php/login.php" method="post">
         <h1 class="titulo">HomerBook</h1>
         <div class="inputs">
             <label for="usuario">
@@ -25,7 +25,7 @@
                 <input placeholder="contraseña" name="contrasena" type="password" id="contrasena">
             </label>
                 <a href="#" class="olvide">¿Olvidaste tu contraseña?</a>
-                <input id="boton-ingresar" value="Ingresar" type="submit"></input>
+                <input id="boton-ingresar" value="In gresar" type="submit"></input>
         </div>
 </form>
     

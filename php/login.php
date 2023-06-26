@@ -1,5 +1,5 @@
 <?php
-
+require_once 'conexion.php';
 
 $usuario_ingresado = $_POST["correo"];
 $contrasena_ingresada = $_POST["contrasena"];
