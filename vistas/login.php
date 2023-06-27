@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingresar a Arem</title>
     <!-- hoja de estilo -->
-    <link rel="stylesheet" href="css/entrar.css">
+    <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 <body class="body">
@@ -32,8 +32,7 @@
     <div id="campo-para-mensajes">
 
     </div>
-
     <script src="https://kit.fontawesome.com/1eaa4d8a9c.js" crossorigin="anonymous"></script>
-    <script src="javas/login.js"></script>
+    <script src="../javas/login.js"></script>
 </body>
 </html>

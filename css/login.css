@@ -10,11 +10,7 @@
 /*homero escondido*/
 .body {
     max-height: 100vh;
-    background-color: rgb(0, 0, 0);
-    background-image: url(nube.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: #001122;
 }
 .modo-noche {
     background:rgb(0, 0, 0);
