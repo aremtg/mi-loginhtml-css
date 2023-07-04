@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="../css/papelito.css">
 
 </head>
+<body>
+    
 <?php
     include '../partituras/minav.php';
 ?>
@@ -63,9 +65,6 @@
                             <label for="exampleFormControlTextarea1" class="form-label text-motivo">Motivo de la salida</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
-                <div class="firmas">
-                        
-                </div>
             </div>
             <button class="btn-generar-imagen" onclick="generarImagen()">Generar Papelito</button>
         </div>

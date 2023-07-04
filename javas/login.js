@@ -42,24 +42,25 @@ focusUsuario.focus();
 // }
 
 //evento para mostar un mensaje-de recordar contraseña 
-let linkOlvide = document.querySelector(".olvide");
+let linkOlvide = document.getElementsByClassName("olvide");
 let campoMensajes = document.querySelector("#campo-para-mensajes");
 linkOlvide.addEventListener("click", crearMensajeOlvideContrasena);
 
 function crearMensajeOlvideContrasena(){
+   
     const botonIngresar = document.querySelector("#boton-ingresar");
     botonIngresar.disabled = true;
-   campoMensajes.innerHTML=
-   `<div id="contenedor-mensaje">
-        <h3 id="titulo-mensaje">¿olvidaste tu contraseña?</h3> <!-- titulo -->
-        <span id="contenido-mensaje">Soy Arem, aun no he creado un registro... entra con usuario y sontraseña "admin"</span> <!-- contenido -->
+    campoMensajes.innerHTML=
+   `    <h3 id="titulo-mensaje">¿olvidaste tu contraseña?</h3> <!-- titulo -->
+        <span id="contenido-mensaje">Hola</span> <!-- contenido -->
         <div id="dos-botones">
-        <button id="boton-restablecer-contrasena" type="button">Aun no sirve</button> <!-- boton -->
-        <button id="boton-cerrar-mensaje" type="button">Cerrar</button> <!-- boton -->
-        </div>
-    </div>`;
+        <button id="boton-restablecer-contrasena" type="button">Aun no sirve</button>
+        <button id="boton-cerrar-mensaje" type="button">Cerrar</button>
+        </div>`;
+    campoMensajes.style= `display: block;`;
     const h3Titulo = document.querySelector("#titulo-mensaje");
-    h3Titulo.style=`text-align: center;`
+    h3Titulo.style=`text-align: center;`;
+  
     const botonCerrar = document.querySelector("#boton-cerrar-mensaje");
     botonCerrar.addEventListener("click", cerrarMensaje);
 

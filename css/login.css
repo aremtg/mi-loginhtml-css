@@ -1,79 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=Rock+Salt&display=swap');
-
+@font-face{
+    font-family: 'blanka';
+    src: url(Blanka-Regular.otf)
+}
 * {
     padding: 0;
     margin: 0;
-    text-decoration: none;
     box-sizing: border-box;
+    text-decoration: none;
 }
-
-/*homero escondido*/
 .body {
+    height: 100vh;
     max-height: 100vh;
-    background: #001122;
+    background: #14344d;
 }
 .modo-noche {
-    background:rgb(0, 0, 0);
+    background:rgb(255, 255, 255);
 }
 .boton-mode {
-    position: absolute;
+    position: fixed;
+    width: 50px;
     padding: 10px;
-    background: rgb(255, 238, 0);
-    box-shadow: 3px 3px rgb(255, 166, 0);
+    background: #53cc02;
+    box-shadow:-3px -2px #4ea514;
     border-radius: 10%;
     border: none;
-    color: rgb(0, 0, 0);
-    top: 5%;
-    left: 3%;
     cursor: pointer;
+    margin-right: auto;
+    margin-left: 10px;
+    margin-top: 8px;
+    
 }
-
 /*icon sol*/
 .boton-mode .bi-brightness-high-fill {
     color: rgb(255, 255, 255);
     font-size: 30px;
 }
-
 /*icon luna*/
 .boton-mode .bi-moon-fill {
-    color: rgb(54, 63, 189);
+    color: rgb(131, 133, 167);
     font-size: 30px;
 }
-
-.homero{
-    width: 320px;
-    
-}
-
 form {
     width: 340px;
-    background: white;
     text-align: center;
-    padding: 15px 20px;
-    border-radius: 20px;
-    box-shadow: 0 5px 10px rgb(21, 21, 21);
+    padding: 15px;
+    border-radius: 50px;
+    background: transparent;
+    box-shadow:  20px 20px 60px #0e2436,
+                 -20px -20px 60px #1a4464;
     margin-left: auto;
     margin-right: auto;
+   transform: translateY(50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  
 }
 
 form .titulo {
-    color: black;
-    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-family: 'blanka';
     font-weight: 800;
-    font-family: 'Rock Salt';
+    padding-bottom: 15px;
 }
 
 /*como cada cajita donde estan los imput contra y usuario*/
-.inputs{
-    display: flex;
-    flex-direction: column;
-}
-form label i {
+label i {
     font-size: 20px;
     color: rgb(0, 0, 0);
 }
 
-form label input {
+label input {
     outline: none;
     border: none;
     color: black;
@@ -87,39 +87,40 @@ form label input::placeholder {
     color: rgb(162, 176, 176);
 }
 
-form .olvide {
+form a{
+    color: white;
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
 }
-
+form a:hover{
+    text-decoration-line:underline;
+}
 form #boton-ingresar{
-    width: 100%;
+    width: 70%;
     height: 34px;
-    background: aqua;
+    background: #53cc02;
+    box-shadow:-3px -2px #4ea514;
     border: none;
     border-radius: 10px;
-    font-weight: 800;
-    cursor: pointer;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
-
+    font-weight: 800;
+    cursor: pointer;
 }
-
 /*olvidaste tu contraseña*/
-#contenedor-mensaje {
-    position: absolute;
-    background: rgb(255, 255, 255);
-    max-width: 500px;
+#campo-para-mensajes{
+    z-index: 1;
+    background: rgba(213, 250, 241, 0.74);
+    max-width: 400px;
     height: max-content;
-    right: 10rem;
     padding: 1rem;
-    padding-bottom: .5rem;
     display: flex;
     flex-direction: column;
     border-radius: .50rem;
     font-family: 'Poppins', sans-serif;
     gap: .25rem;
     box-shadow: 0 5px 10px rgb(21, 21, 21);
+
 }
 
 #contenido-mensaje {
@@ -130,7 +131,7 @@ form #boton-ingresar{
 #boton-cerrar-mensaje {
     width: max-content;
     background: rgb(247, 98, 130);
-    border: 0.9px rgb(235, 198, 34) solid;
+    border: 0.9px rgb(225, 230, 213) solid;
     border-radius: .25rem;
     padding: .25rem;
     cursor: pointer;

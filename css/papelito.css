@@ -1,20 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Poppins:wght@300;400;500;600;800&display=swap');
-*{
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-body{
-    background: #001122;
-    max-height: 100vh;
-    margin: 0;
-}
+
 .contenedor{
     border-radius: 5px;
     width: 90%;
-    margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);

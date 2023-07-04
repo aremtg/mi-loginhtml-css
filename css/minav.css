@@ -1,37 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Poppins:wght@300;400;500;600;800&display=swap');
-*{
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-body{
-    max-height: 100vh;
-    margin: 0;
-}
+
 .nav-box{
-    z-index: -9999;
-    top: 0;
-    position: fixed;
-    height: 150px;
+    z-index: -1;
+    height: 100px;
     width: 100%;
-    background-image: url('../imagenes/wave.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)); */
-    display: flex;
-    align-items: center;
+    background-color: red;
+   
 }
 .nav-box .logo{
     width: 5rem;
     margin-top: 10px;
     margin-left: 25px;
-    margin-bottom: auto;
-}
-nav{
-    display: flex;
-    list-style: none;
-    height: 50%;
-    margin-top: 10px;
-    margin-bottom: auto;
+
 }
 .nav_lista{
     display: flex;
@@ -49,7 +28,7 @@ li i {
     color: #ffff;
 }
 li a{
-    color: #ffff;
+    color: #ffffff;
     padding: 5px;
     text-decoration: none;
 }

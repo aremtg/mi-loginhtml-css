@@ -1,4 +1,4 @@
-<body>
+
     <section class="nav-box">
         <img src="../imagenes/logoSena.svg" class="logo" alt="logo">
         <nav>
