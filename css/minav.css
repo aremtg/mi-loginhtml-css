@@ -1,10 +1,8 @@
 
 .nav-box{
-    z-index: -1;
+ display: flex;
     height: 100px;
     width: 100%;
-    background-color: red;
-   
 }
 .nav-box .logo{
     width: 5rem;

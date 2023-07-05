@@ -17,18 +17,18 @@
 
             <label for="usuario">
                 <i class="fa-solid fa-user"></i>
-                <input required placeholder="nombre de usuario" type="text" name="usuario" id="usuario">
+                <input required placeholder="correo" type="text" name="usuario" id="usuario">
             </label>
             <label for="contrasena">
                 <i class="fa-solid fa-lock"></i>
                 <input placeholder="contraseña" name="contrasena" type="password" id="contrasena">
             </label>
-                <a href="#" class="olvide">¿Olvidaste tu contraseña?</a>
+                <a href="#" onclick="mensajeOlvideContrasena()" class="olvide">¿Olvidaste tu contraseña?</a>
                 <input id="boton-ingresar" value="Ingresar" type="submit"></input>
     </form>
     
-    <div id="campo-para-mensajes">
-
+    <div id="campo-mensajes">
+       
     </div>
     <script src="https://kit.fontawesome.com/1eaa4d8a9c.js" crossorigin="anonymous"></script>
     <script src="../javas/login.js"></script>

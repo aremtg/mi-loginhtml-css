@@ -42,58 +42,29 @@ focusUsuario.focus();
 // }
 
 //evento para mostar un mensaje-de recordar contraseña 
-let linkOlvide = document.getElementsByClassName("olvide");
-let campoMensajes = document.querySelector("#campo-para-mensajes");
-linkOlvide.addEventListener("click", crearMensajeOlvideContrasena);
 
-function crearMensajeOlvideContrasena(){
-   
-    const botonIngresar = document.querySelector("#boton-ingresar");
+function mensajeOlvideContrasena(){
+
+    let botonIngresar = document.getElementById("boton-ingresar");
     botonIngresar.disabled = true;
-    campoMensajes.innerHTML=
-   `    <h3 id="titulo-mensaje">¿olvidaste tu contraseña?</h3> <!-- titulo -->
-        <span id="contenido-mensaje">Hola</span> <!-- contenido -->
-        <div id="dos-botones">
-        <button id="boton-restablecer-contrasena" type="button">Aun no sirve</button>
-        <button id="boton-cerrar-mensaje" type="button">Cerrar</button>
-        </div>`;
-    campoMensajes.style= `display: block;`;
-    const h3Titulo = document.querySelector("#titulo-mensaje");
-    h3Titulo.style=`text-align: center;`;
-  
-    const botonCerrar = document.querySelector("#boton-cerrar-mensaje");
+    let campoMensajes = document.getElementById("campo-mensajes");
+    campoMensajes.style.display = "block";
+
+   campoMensajes.innerHTML=`
+   <div id="contenido">
+   <a href="#">Reestablecer contraseña</a>
+   </div>
+   <button id="boton-cerrar-mensaje">X</button>`;
+    let botonCerrar = document.getElementById("boton-cerrar-mensaje");
     botonCerrar.addEventListener("click", cerrarMensaje);
 
     function cerrarMensaje(){
-    campoMensajes.innerHTML= "";
     botonIngresar.disabled = false;
+    campoMensajes.style.display = "none";
     }
-    const dosBotones = document.querySelector("#dos-botones");
-    dosBotones.style=`
-    width: 100%;
-    display:flex;
-    gap: 5rem;
-    justify-content: center;
-    margin-top: 10px;
-    `;
-    const botonRestablecerContrasena = document.querySelector("#boton-restablecer-contrasena");
-        botonRestablecerContrasena.style=`
-        width: max-content;
-        background: aqua;
-        border: 0.9px rgb(34, 235, 235) solid;
-        border-radius: .25rem;
-        padding: .25rem;
-        cursor: pointer;
-        display: flex;
-        align-self:flex-start;
-        margin-right: .25rem;
-        font-family: 'Poppins', sans-serif;`;
-        botonRestablecerContrasena.addEventListener("click", restablecerContrasena);
-        function restablecerContrasena(){
-          alert("no pasó naaaa");
-       
-        }
+
 }
+
 //modo oscuro
 const botonModo = document.querySelector(".boton-mode");
 const body = document.querySelector(".body");
