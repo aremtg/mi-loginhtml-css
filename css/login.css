@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=Rock+Salt&display=swap');
 @font-face{
     font-family: 'blanka';
-    src: url(Blanka-Regular.otf)
+    src: url(Blanka-Regular.otf);
 }
 * {
     padding: 0;
@@ -18,7 +18,7 @@
     background: #0c2131;
 }
 .boton-mode {
-    position: fixed;
+    position: relative;
     width: 50px;
     padding: 10px;
     background: #53cc02;
@@ -26,10 +26,7 @@
     border-radius: 10%;
     border: none;
     cursor: pointer;
-    margin-right: auto;
-    margin-left: 10px;
-    margin-top: 8px;
-    
+    transform: translate(30px, 30px);
 }
 /*icon sol*/
 .boton-mode .bi-brightness-high-fill {
@@ -41,7 +38,7 @@
     color: rgb(131, 133, 167);
     font-size: 30px;
 }
-form {
+.caja-login {
     width: 340px;
     text-align: center;
     padding: 15px;
@@ -51,51 +48,47 @@ form {
                  -20px -20px 60px #1a4464;
     margin-left: auto;
     margin-right: auto;
-   transform: translateY(50%);
+    margin-top: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-  
 }
-
-form .titulo {
+.caja-login .titulo {
     color: rgb(255, 255, 255);
     font-size: 35px;
     font-family: 'blanka';
     font-weight: 800;
     padding-bottom: 15px;
 }
-
 /*como cada cajita donde estan los imput contra y usuario*/
-label i {
+.caja-login label i {
     font-size: 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(201, 238, 210);
 }
-
-label input {
+.caja-login label input {
     outline: none;
     border: none;
     color: black;
     border-bottom: solid 1px black;
+    border-radius: 10px;
     padding: 0 6px;
     font-size: 18px;
     margin-bottom: 20px;
     font-family: 'Poppins', sans-serif;
 }
-form label input::placeholder {
+.caja-login label input::placeholder {
     color: rgb(162, 176, 176);
 }
-
-a{
+.caja-login a{
     color: white;
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
 }
-a:hover{
+.caja-login a:hover{
     text-decoration-line:underline;
 }
-form #boton-ingresar{
+.caja-login #boton-ingresar{
     width: 70%;
     height: 34px;
     background: #53cc02;
@@ -119,7 +112,6 @@ form #boton-ingresar{
     box-shadow:-3px -2px #4ea514;
     border-radius: 10px;
     padding: 20px;
-   
     display: none;
 }
 
@@ -136,7 +128,113 @@ form #boton-ingresar{
     border-radius: 50%;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
-   position: absolute;
-  top: -10px;
-  right: -10px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+.caja-cambiarA{
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    top: 200px;
+}
+.btn-cambiarA{
+    background: #a7e0d7;
+    box-shadow:-3px -2px #14a5a5;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.caja-cambiarA i{
+    color: #000000;
+    font-size: 30px;
+}
+
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+.caja-registro{
+    width: 420px;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 20px;
+    background: transparent;
+    box-shadow:  20px 20px 60px #0e2436,
+                 -20px -20px 60px #1a4464;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    font-family: 'Poppins', sans-serif;
+    display: none;
+}
+.caja-registro .titulo{
+    font-size: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.titulo .ssaci{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-family: 'blanka';
+    font-weight: 800;
+}
+.caja-registro .campo{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.campo label{
+    color: rgb(201, 238, 210);
+}
+.campo input{
+    outline: none;
+    border: none;
+    color: black;
+    border-bottom: solid 1px black;
+    border-radius: 10px;
+    padding: 0 6px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.input-edad{
+    width: 60px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+.input-sexo{
+    width: 100px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(179, 219, 219);
+}
+.btn-enviar-registro{
+    width: 70%;
+    height: 34px;
+    background: #53cc02;
+    box-shadow:-3px -2px #4ea514;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }

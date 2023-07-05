@@ -7,10 +7,8 @@
     <link rel="stylesheet" href="../css/registro.css">
 </head>
 <body>
-<div class="caja-registro">
-    <h2 class="titulo">Registrate en Homerbook</h2>
-
-    <form action="php/registro.php" method="POST">
+    <form action="../php/registro.php" method="POST" class="caja-registro">
+      <h2 class="titulo">Registrate en <span class="ssaci">SSACI</span></h2>
       <div class="campo">
         <label for="nombre">Nombre:
                 <input type="text" id="nombre" name="nombre" required>
@@ -45,9 +43,9 @@
         </select>
       </div>
       <div class="campo">
-        <input class="btn-enviar-registro" type="submit" value="Enviar">
+        <input class="btn-enviar-registro" name="btn_registar" type="submit" value="Enviar">
       </div>
     </form>
-  </div>
+
 </body>
 </html>

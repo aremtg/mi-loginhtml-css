@@ -1,8 +1,8 @@
 <?php
 require_once 'conexion.php';
 
-$usuario_ingresado = $_POST["usuario"];
-$contrasena_ingresada = $_POST["contrasena"];
+$usuario_ingresado = $_POST["correo"];
+$contrasena_ingresada = $_POST["codigo"];
 
 #se hace la consulta para ver si existe ese usuario ingresado en la bd
 $query = mysqli_query($db, "SELECT * FROM usuarios WHERE correo = '".$usuario_ingresado."' and codigo = '".$contrasena_ingresada."'");
@@ -14,7 +14,7 @@ if($columnasAfectadas == 1){
     header("location: ../vistas/casa.php");
 }else if($columnasAfectadas == 0){
     header("location: ../vistas/login.php");
-    // echo "error tatiana";
+    
 }
 
 
