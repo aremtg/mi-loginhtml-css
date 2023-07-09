@@ -1,20 +1,14 @@
-
-.contenedor{
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-}
-.caja_hyr{
+.contenido{
+    background-color: rgba(247, 219, 127, 0.418);
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
+
 }
 .hoja{
+   width: 500px;
     padding: 5px 10px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.74);
+    background-color: rgba(245, 244, 244, 0.74);
     border-right: 4px solid #b7caa9;
     border-bottom: 5.5px solid #647457;
     cursor:url("../imagenes/pencil.svg"), auto;
@@ -64,14 +58,12 @@ table .form-select, option,.form-control{
 /* la imagen generada */
 /* caja */
 .resultado{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 380px;
-    height: 100%;
-    box-shadow: 1px 5px 16px 2px rgb(48, 189, 5);
+    width: 500px;
+    height: 200px;
     border-radius: 10px;
-    overflow: hidden;
+    background-color: rgba(245, 244, 244, 0.74);
+    border-right: 4px solid #b7caa9;
+    border-bottom: 5.5px solid #647457;
 }
 .resultado img{
     aspect-ratio: 9/7;

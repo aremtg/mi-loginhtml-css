@@ -1,9 +1,8 @@
 //modo oscuro
-
+const botonModo = document.querySelector(".boton-mode");
 botonModo.addEventListener("click", cambiarModo);
 
 function cambiarModo(){
-    const botonModo = document.querySelector(".boton-mode");
     const body = document.querySelector(".body");
 
     body.classList.toggle("modo-noche");
@@ -38,11 +37,11 @@ function mensajeOlvideContrasena(){
     }
 }
 // animacion para pasar de login a registro desde login.php
-function animacionBtnQuiero() {
-    let caja_cambiarA = document.querySelector(".caja-cambiarA");
-    let btn_cambiarA = document.querySelector(".btn-cambiarA");
-    let icono_cambiarA = document.querySelector(".fa-person-running");
-    // hacer la a aniacion- icono tambien
-    
+function transicionRegistroLogin() {
+    const cajaLogin = document.querySelector('.caja-login');
+    const cajaRegistro = document.querySelector('.caja-registro');
+
+    cajaLogin.classList.toggle("loginleft");
+    cajaRegistro.classList.toggle("registroRight");
 }
   

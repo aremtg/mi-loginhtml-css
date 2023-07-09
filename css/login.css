@@ -13,6 +13,7 @@
     height: 100vh;
     max-height: 100vh;
     background: #14344d;
+    position: relative;
 }
 .modo-noche {
     background: #0c2131;
@@ -39,20 +40,20 @@
     font-size: 30px;
 }
 .caja-login {
+    position: absolute;
     width: 340px;
-    text-align: center;
     padding: 15px;
     border-radius: 50px;
     background: transparent;
     box-shadow:  20px 20px 60px #0e2436,
                  -20px -20px 60px #1a4464;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .caja-login .titulo {
     color: rgb(255, 255, 255);
@@ -102,7 +103,7 @@
 }
 /*olvidaste tu contraseña*/
 #campo-mensajes{
-    position: relative;
+    position: absolute;
     top: -40%;
     left: 50%;
     transform: translate(-50%, 40%);
@@ -158,83 +159,24 @@
     font-size: 30px;
 }
 
-/*---------------------------------------------------------------*/
-/*---------------------------------------------------------------*/
-.caja-registro{
-    width: 420px;
-    text-align: center;
-    padding: 15px 20px;
-    border-radius: 20px;
-    background: transparent;
-    box-shadow:  20px 20px 60px #0e2436,
-                 -20px -20px 60px #1a4464;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 200px;
-    font-family: 'Poppins', sans-serif;
-    display: none;
+/* animacion */
+.caja-resgistro{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-60%, -50%);
 }
-.caja-registro .titulo{
-    font-size: 20px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-}
-.titulo .ssaci{
-    color: rgb(255, 255, 255);
-    font-size: 35px;
-    font-family: 'blanka';
-    font-weight: 800;
-}
-.caja-registro .campo{
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-}
-.campo label{
-    color: rgb(201, 238, 210);
-}
-.campo input{
-    outline: none;
-    border: none;
-    color: black;
-    border-bottom: solid 1px black;
-    border-radius: 10px;
-    padding: 0 6px;
-    font-size: 18px;
-    margin-bottom: 20px;
-    font-family: 'Poppins', sans-serif;
-}
-.input-edad{
-    width: 60px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    color: #333;
-    -moz-appearance: textfield;
-    appearance: textfield;
-}
-.input-sexo{
-    width: 100px;
-    height: 30px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    background-color: rgb(179, 219, 219);
-}
-.btn-enviar-registro{
-    width: 70%;
-    height: 34px;
-    background: #53cc02;
-    box-shadow:-3px -2px #4ea514;
-    border: none;
-    border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    font-weight: 800;
-    cursor: pointer;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+.loginleft{
+    animation: transicionLeft .8s forwards linear;
+   }
+@keyframes transicionLeft{
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateX(-100%);
+        opacity: 0;
+        display: none;
+      }
 }

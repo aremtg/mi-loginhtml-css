@@ -1,29 +1,28 @@
-
-.nav-box{
- display: flex;
-    height: 100px;
-    width: 100%;
-}
-.nav-box .logo{
-    width: 5rem;
-    margin-top: 10px;
-    margin-left: 25px;
-
-}
-.nav_lista{
-    display: flex;
-    align-items:start;
-    gap: 4rem;
-}
-.nav_lista li{
-    font-weight: 600;
+nav{
     display: flex;
     align-items: center;
-
+    font-family: 'Poppins', sans-serif;
+    height: 90px;
+    background-color: #26f00b48;
+}
+nav .logo{
+    width: 4rem;
+    margin-left: 10px;
+}
+ul{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    background-color: rgba(163, 228, 228, 0);
+    justify-content: space-between;
+}
+li{
+    display: flex;
+    align-items: center;
 }
 li i {
     font-size: 24px;
-    color: #ffff;
+    color: #26f00b;
 }
 li a{
     color: #ffffff;
