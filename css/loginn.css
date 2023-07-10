@@ -16,7 +16,7 @@
     position: relative;
 }
 .modo-noche {
-    background: #0c2131;
+    background: #386385;
 }
 .boton-mode {
     position: relative;
@@ -29,31 +29,29 @@
     cursor: pointer;
     transform: translate(30px, 30px);
 }
-/*icon sol*/
-.boton-mode .bi-brightness-high-fill {
+/*icon sol y luna*/
+.boton-mode .bi-brightness-high-fill,.boton-mode .bi-moon-fill{
     color: rgb(255, 255, 255);
     font-size: 30px;
 }
-/*icon luna*/
-.boton-mode .bi-moon-fill {
-    color: rgb(131, 133, 167);
-    font-size: 30px;
+.contenedor-login-registro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
 .caja-login {
-    position: absolute;
     width: 340px;
+    height: max-content;
     padding: 15px;
     border-radius: 50px;
     background: transparent;
     box-shadow:  20px 20px 60px #0e2436,
-                 -20px -20px 60px #1a4464;
+                -20px -20px 60px #1a4464;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 .caja-login .titulo {
     color: rgb(255, 255, 255);
@@ -115,7 +113,6 @@
     padding: 20px;
     display: none;
 }
-
 #campo-mensajes #contenido{
     width: 90%;
     text-align: center;
@@ -133,50 +130,33 @@
     top: -10px;
     right: -10px;
 }
-.caja-cambiarA{
-    position: relative;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    top: 200px;
+.div-transicionRegistroLogin{
+    position: absolute;
+    top: 50px;
+    left: 90px;
 }
-.btn-cambiarA{
-    background: #a7e0d7;
+.btn-transicion{
+    height: 20px;
+    width: 20px;
+    background: #40a596;
     box-shadow:-3px -2px #14a5a5;
     border: none;
-    border-radius: 10px;
-    font-size: 15px;
-    font-weight: 800;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
+    border-radius: 50%;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
-.caja-cambiarA i{
+.div-transicionRegistroLogin i{
     color: #000000;
     font-size: 30px;
 }
-
 /* animacion */
-.caja-resgistro{
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-60%, -50%);
+.caja-registro{
+ margin: 0;
+ display: none;
+ 
 }
-.loginleft{
-    animation: transicionLeft .8s forwards linear;
-   }
-@keyframes transicionLeft{
-    0% {
-        transform: translateX(0);
-        opacity: 1;
-      }
-      100% {
-        transform: translateX(-100%);
-        opacity: 0;
-        display: none;
-      }
+.ocultar{
+    display: none;
+}
+.ver{
+    display: block;
 }

@@ -13,14 +13,6 @@
             <i class="fa-solid fa-arrow-right-from-bracket" id="icono_salir"></i>
             <a href="login.php">Salir</a>
         </li>
-        <li>
-            <i class="fa-solid fa-arrow-right-from-bracket" id="icono_salir"></i>
-            <a href="login.php">Salir</a>
-        </li>
-        <li>
-            <i class="fa-solid fa-arrow-right-from-bracket" id="icono_salir"></i>
-            <a href="login.php">Salir</a>
-        </li>
     </ul> 
 </nav>
 <section class="contenido">

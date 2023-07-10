@@ -10,7 +10,25 @@
 <?php
         include '../partituras/minav.php';
 ?>
-hola
+<section class="features">
+      <h3>Características principales</h3>
+      <div class="feature">
+        <img src="icono1.png" alt="Icono Característica 1">
+        <h4>Crear permisos personalizados</h4>
+        <p>Crea permisos de salida con información personalizada para cada aprendiz.</p>
+      </div>
+      
+      <div class="feature">
+        <img src="icono2.png" alt="Icono Característica 2">
+        <h4>Fácil seguimiento</h4>
+        <p>Realiza un seguimiento sencillo de los permisos de salida creados y su estado.</p>
+      </div>
+      
+      <div class="feature">
+        <img src="icono3.png" alt="Icono Característica 3">
+        <h4>Notificaciones en tiempo real</h4>
+        <p>Recibe notificaciones instantáneas sobre el estado de los permisos de salida.</p>
+      </div>
         
 </section>
     <script src="https://kit.fontawesome.com/1eaa4d8a9c.js" crossorigin="anonymous"></script>

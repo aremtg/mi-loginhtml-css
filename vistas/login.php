@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SSACI</title>
     <!-- hoja de estilo -->
-    <link rel="stylesheet" href="../css/login.css">
-    <link rel="stylesheet" href="../css/registro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/registro.css">
+    <link rel="stylesheet" href="../css/loginn.css">
 </head>
 <body class="body">
-    <div class="boton-mode" ><i class='bi bi-moon-fill'></i></div>
-    
-    <form action="../php/login.php" method="post" class="caja-login">
+    <div class="boton-mode" ><i class='bi bi-moon-fill'></i>
+    </div>
+<div class="contenedor-login-registro">
+
+
+    <form action="../php/login.php" method="post" class="caja-login animate__rubberBand">
         <h1 class="titulo">SSACI</h1>
 
             <label for="usuario">
@@ -27,17 +31,19 @@
                 <a href="#" onclick="mensajeOlvideContrasena()" class="olvide">¿Olvidaste tu contraseña?</a>
                 <input id="boton-ingresar" value="Ingresar" type="submit"></input>
     </form>
+    <?php
+        include '../partituras/registro-partitura.php';
+      ?>
+</div>
     <div class="div-transicionRegistroLogin">
     <button class="btn-transicion" onclick="transicionRegistroLogin()">
-          Registrarme
+         .
     </button>
     </div>
    <div id="campo-mensajes">
        
     </div>
-    <?php
-        include '../partituras/registro-partitura.php';
-      ?>
+    
     <script src="https://kit.fontawesome.com/1eaa4d8a9c.js" crossorigin="anonymous"></script>
     <script src="../javas/login.js"></script>
 </body>

@@ -40,8 +40,9 @@ function mensajeOlvideContrasena(){
 function transicionRegistroLogin() {
     const cajaLogin = document.querySelector('.caja-login');
     const cajaRegistro = document.querySelector('.caja-registro');
-
-    cajaLogin.classList.toggle("loginleft");
-    cajaRegistro.classList.toggle("registroRight");
+    
+   cajaLogin.classList.toggle("ocultar");
+   cajaRegistro.classList.toggle("ver");
+   
 }
   

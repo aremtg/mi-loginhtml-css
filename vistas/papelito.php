@@ -18,7 +18,7 @@
         <img src="../logopapel.png" width="90px" alt="">
     </div>
 
-    <h1 class="titulo">PEPELITO DE SALIDA</h1>
+    <h1 class="titulo">Permiso</h1>
     <img src="" alt="">
 
     <table class="table">
@@ -40,20 +40,10 @@
                     </select>
                 </td>
                 <td>
-                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                        <option selected>123456</option>
-                        <option value="1">Ficha 1</option>
-                        <option value="2">Ficha 2</option>
-                        <option value="3">Ficha 3</option>
-                    </select>
+                   2557736
                 </td>
                 <td>
-                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                        <option selected>Analisis y desarrollo de software</option>
-                        <option value="1">Programa 1</option>
-                        <option value="2">Programa 2</option>
-                        <option value="3">Programa 3</option>
-                    </select>
+                   Analisis y Desarrollo de Software
                 </td>
             </tr>
         </tbody>
@@ -65,13 +55,12 @@
         </div>
 </div>
 
-        <button class="btn-generar-imagen" onclick="generarImagen()">Generar Papelito</button>
+        <button class="btn-generar-imagen" onclick="generarImagen()">Generar</button>
     </div>
     <div class="resultado">
-        Aqui estara tu papel generado
-    <button class="btn-generar-imagen" onclick="enviarAPorteria()">Enviar a porteria</button>
-
     </div>
+    <button class="btn-generar-imagen" onclick="enviarAPorteria()">Enviar</button>
+
 </section>
     <script src="https://kit.fontawesome.com/1eaa4d8a9c.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>

@@ -11,12 +11,11 @@
 body{
     height: 100vh;
     max-height: 100vh;
-    background-color: #f5f7f8; ;
+    background: #14344d;
 }
 .contenido{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-    background-color: rgb(66, 109, 95);
 }
