@@ -1,40 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=Rock+Salt&display=swap');
-@font-face{
-    font-family: 'blanka';
-    src: url(Blanka-Regular.otf);
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    height: 100vh;
-    max-height: 100vh;
-    background: #14344d;
+body{
+    display: grid;
+    place-items: center;
 }
 .caja-registro{
     width: 420px;
     text-align: center;
-    padding: 15px 20px;
-    border-radius: 20px;
+    padding: 15px;
+    border-radius: 50px;
     background: transparent;
-    box-shadow:  20px 20px 60px #0e2436,
-                 -20px -20px 60px #1a4464;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 200px;
-    font-family: 'Poppins', sans-serif;
+    box-shadow: var(--sombra);
 }
 .caja-registro .titulo{
     font-size: 20px;
-    color: white;
+    color: var(--fondo-osc);
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 }
 .titulo .ssaci{
-    color: rgb(255, 255, 255);
+    color: var(--fondo-osc);
     font-size: 35px;
     font-family: 'blanka';
     font-weight: 800;
@@ -45,18 +29,16 @@ body {
     flex-direction: column;
 }
 .campo label{
-    color: rgb(201, 238, 210);
+    color: var(--fondo-osc);
 }
 .campo input{
     outline: none;
     border: none;
     color: black;
-    border-bottom: solid 1px black;
     border-radius: 10px;
     padding: 0 6px;
-    font-size: 18px;
+    font-size: 14px;
     margin-bottom: 20px;
-    font-family: 'Poppins', sans-serif;
 }
 .input-edad{
     width: 60px;
@@ -78,16 +60,16 @@ body {
 }
 .btn-enviar-registro{
     width: 70%;
-    height: 34px;
-    background: #53cc02;
-    box-shadow:-3px -2px #4ea514;
-    border: none;
-    border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    font-weight: 800;
+    color: #090909;
+    padding: .5rem 1.5rem;
+    font-size: 14px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    transition: all .3s;
+    box-shadow: 4px 4px 9px #bebebe,
+    -4px -4px 9px #ffffff;
     cursor: pointer;
-    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
 }

@@ -3,6 +3,13 @@
     font-family: 'blanka';
     src: url(Blanka-Regular.otf);
 }
+:root {
+    --fondo-osc: #386385;
+    --fondo-tema: #e2e2e2;
+    --sombra: 7px 7px 13px #bebebe, -7px -7px 13px #ffffff;
+    --sombra-dentro: inset 4px 4px 9px #bebebe,
+    inset -4px -4px 9px #ffffff;
+}
 *{
     margin: 0;
     box-sizing: border-box;
@@ -11,11 +18,38 @@
 body{
     height: 100vh;
     max-height: 100vh;
-    background: #14344d;
+    background: var(--fondo-tema);
 }
 .contenido{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
+    margin-top: 3rem;
+}
+.modo-noche {
+    background:var(--fondo-osc);
+}
+.boton-mode {
+    position: absolute;
+    width: 50px;
+    background: var(--fondo-osc);
+    box-shadow:-3px -2px #79a2c4;
+    border-radius: 10%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    left: 10px;
+}
+/*icon sol y luna*/
+.boton-mode .bi-brightness-high-fill,.boton-mode .bi-moon-fill{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+.contenedor-login-registro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

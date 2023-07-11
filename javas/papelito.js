@@ -10,6 +10,7 @@ let año = date.getFullYear();
 let fecha = document.querySelector(".fecha");
 fecha.textContent = diaMes + "/" + mes + "/" + año;
 
+
 function generarImagen() {
   var resultado = document.querySelector(".resultado");
   var img = resultado.querySelector("img");
@@ -31,4 +32,5 @@ function enviarAPorteria(){
     var resultado = document.querySelector(".resultado");
     resultado.innerHTML = ` `;
 }
-  
+let hora = document.querySelector(".hora");
+hora.innerHTML="hola";

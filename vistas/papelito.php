@@ -10,54 +10,46 @@
 <?php
         include '../partituras/minav.php';
 ?>
-   <div class="hoja">
-    <p class="fecha"></p>
-    <div class="logos">
-        <img src="../imagenes/logoSena.svg" width="80px" alt="">
-        <span class="separa-logos"></span>
-        <img src="../logopapel.png" width="90px" alt="">
+<div class="hoja">
+    <div class="box-fecha">
+        <div class="fecha"></div>
     </div>
-
-    <h1 class="titulo">Permiso</h1>
-    <img src="" alt="">
-
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">Nombre Aprendiz</th>
-                <th scope="col">Ficha</th>
-                <th scope="col">Titulada</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                        <option selected>Aprendiz Sena</option>
-                        <option value="1">Aprendiz 1</option>
-                        <option value="2">Aprendiz 2</option>
-                        <option value="3">Aprendiz 3</option>
-                    </select>
-                </td>
-                <td>
-                   2557736
-                </td>
-                <td>
-                   Analisis y Desarrollo de Software
-                </td>
-            </tr>
-        </tbody>
-        
-    </table>
-    <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label text-motivo">Motivo de la salida</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
+   <div>
+        <label for="aprendiz-lista">Aprendiz:</label>
+        <select id="aprendiz-lista">
+            <option value="opcion1">Opción 1</option>
+            <option value="opcion2">Opción 2</option>
+            <option value="opcion3">Opción 3</option>
+        </select>
+    </div>
+    <div>
+        <label for="titulada">Titulada:</label>
+        <input type="text" id="titulada" value="Analisis y Desarrollo de software" />
+    </div>
+    <div>
+        <label for="ficha">Ficha:</label>
+        <input type="text" id="ficha" value="2557736" />
+    </div>
+    <div>
+        <label for="instructor">Instructor:</label>
+        <input type="text" id="instructor" value="Hector Mauricio Camargo" />
+    </div>
+    
+    <div>
+        <div class="hora">ffff</div>
+        <button>a.m</button>
+    </div>
+  
+  <div class="box-motivo">
+    <label for="motivo">Movitivo de la salida:</label>
+    <textarea id="motivo" rows="4" cols="50"></textarea>
+  </div>
 </div>
 
-        <button class="btn-generar-imagen" onclick="generarImagen()">Generar</button>
-    </div>
+    <button class="btn-generar-imagen" onclick="generarImagen()">Generar</button>
+
     <div class="resultado">
+
     </div>
     <button class="btn-generar-imagen" onclick="enviarAPorteria()">Enviar</button>
 
@@ -67,5 +59,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.0/html2canvas.min.js"></script>
     <script src="../javas/papelito.js"></script>
 </body>
-
 </html>

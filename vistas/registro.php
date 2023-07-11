@@ -2,6 +2,7 @@
         include '../partituras/head.php';
 ?>
 <title>registrate</title>
+    <link rel="stylesheet" href="../css/basic.css">
     <link rel="stylesheet" href="../css/registro.css">
 </head>
 <body>

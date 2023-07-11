@@ -20,14 +20,14 @@ function mensajeOlvideContrasena(){
     botonIngresar.disabled = true;
 
     let campoMensajes = document.getElementById("campo-mensajes");
+    
+    campoMensajes.innerHTML=`
+    <div id="mensaje">
+    <a href="#">Reestablecer contraseña</a>
+    </div>
+    <button id="boton-cerrar-mensaje">X</button>`;
+
     campoMensajes.style.display = "block";
-
-   campoMensajes.innerHTML=`
-   <div id="contenido">
-   <a href="#">Reestablecer contraseña</a>
-   </div>
-   <button id="boton-cerrar-mensaje">X</button>`;
-
     let botonCerrar = document.getElementById("boton-cerrar-mensaje");
     botonCerrar.addEventListener("click", cerrarMensaje);
 

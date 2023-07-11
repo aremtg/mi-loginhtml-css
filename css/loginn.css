@@ -1,44 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=Rock+Salt&display=swap');
-@font-face{
-    font-family: 'blanka';
-    src: url(Blanka-Regular.otf);
-}
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
 .body {
-    height: 100vh;
-    max-height: 100vh;
-    background: #14344d;
     position: relative;
-}
-.modo-noche {
-    background: #386385;
-}
-.boton-mode {
-    position: relative;
-    width: 50px;
-    padding: 10px;
-    background: #53cc02;
-    box-shadow:-3px -2px #4ea514;
-    border-radius: 10%;
-    border: none;
-    cursor: pointer;
-    transform: translate(30px, 30px);
-}
-/*icon sol y luna*/
-.boton-mode .bi-brightness-high-fill,.boton-mode .bi-moon-fill{
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-}
-.contenedor-login-registro{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
+    display: grid;
+    place-items: center;
+    font-family: 'Poppins', sans-serif;
 }
 .caja-login {
     width: 340px;
@@ -46,78 +10,83 @@
     padding: 15px;
     border-radius: 50px;
     background: transparent;
-    box-shadow:  20px 20px 60px #0e2436,
-                -20px -20px 60px #1a4464;
+    box-shadow: var(--sombra);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
 }
 .caja-login .titulo {
-    color: rgb(255, 255, 255);
+    color: var(--fondo-osc);
     font-size: 35px;
     font-family: 'blanka';
     font-weight: 800;
     padding-bottom: 15px;
 }
 /*como cada cajita donde estan los imput contra y usuario*/
+.caja-login label{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+}
 .caja-login label i {
     font-size: 20px;
-    color: rgb(201, 238, 210);
+    color: var(--fondo-osc);
 }
 .caja-login label input {
+    width: 90%;
     outline: none;
     border: none;
     color: black;
-    border-bottom: solid 1px black;
     border-radius: 10px;
-    padding: 0 6px;
-    font-size: 18px;
-    margin-bottom: 20px;
-    font-family: 'Poppins', sans-serif;
+    padding: 4px 10px;
+    font-size: 16px;
 }
 .caja-login label input::placeholder {
     color: rgb(162, 176, 176);
 }
 .caja-login a{
-    color: white;
+    color: var(--fondo-osc);
     font-size: 14px;
-    font-family: 'Poppins', sans-serif;
 }
 .caja-login a:hover{
     text-decoration-line:underline;
 }
-.caja-login #boton-ingresar{
-    width: 70%;
-    height: 34px;
-    background: #53cc02;
-    box-shadow:-3px -2px #4ea514;
-    border: none;
-    border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    font-weight: 800;
+#boton-ingresar{
+    color: #090909;
+    padding: .5rem 1.5rem;
+    font-size: 14px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 4px 4px 9px #bebebe,
+    -4px -4px 9px #ffffff;
     cursor: pointer;
 }
+#boton-ingresar:active {
+    color: #666;
+    box-shadow: var(--sombra-dentro);
+   }
 /*olvidaste tu contraseña*/
 #campo-mensajes{
     position: absolute;
-    top: -40%;
-    left: 50%;
-    transform: translate(-50%, 40%);
+    top: 100px;
     max-width: 280px;
     height: 61px;
-    background:#53cc02c2;
-    box-shadow:-3px -2px #4ea514;
+    background:#acbe9fc2;
+    box-shadow:var(--sombra);
     border-radius: 10px;
     padding: 20px;
     display: none;
-}
-#campo-mensajes #contenido{
+}  
+#campo-mensajes #mensaje{
     width: 90%;
     text-align: center;
 }
-
 #boton-cerrar-mensaje {
     width: 28px;
     border: none;
@@ -125,7 +94,6 @@
     border:5px solid #14344d;;
     border-radius: 50%;
     cursor: pointer;
-    font-family: 'Poppins', sans-serif;
     position: absolute;
     top: -10px;
     right: -10px;
@@ -143,10 +111,6 @@
     border: none;
     border-radius: 50%;
     cursor: pointer;
-}
-.div-transicionRegistroLogin i{
-    color: #000000;
-    font-size: 30px;
 }
 /* animacion */
 .caja-registro{

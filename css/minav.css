@@ -1,29 +1,62 @@
+
 nav{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
-    height: 90px;
-}
-nav .logo{
-    width: 4rem;
-    margin-left: 10px;
-}
-ul{
-    display: flex;
     gap: 1rem;
-    align-items: center;
-    background-color: rgba(163, 228, 228, 0);
-    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
 }
-li{
+.caja-logo{
     display: flex;
     align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 5px;
+
 }
-li i {
-    font-size: 24px;
-    color: #26f00b;
+.caja-logo span{
+    position: relative;
+    width: 4px;
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: black;
 }
-li a{
+.caja-logo .titulo {
+    color: var(--fondo-osc);
+    font-size: 25px;
+    font-family: 'blanka';
+    font-weight: 800;
+}
+.caja-logo .logo{
+    max-width: 45px;
+}
+.nav_ul{
+    margin-top: 10px;
+    margin-bottom: 0%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+    background: transparent;
+    box-shadow: var(--sombra);
+}
+.nav_ul li{
+    list-style: none;
+    align-items: center;
+}
+.nav_ul li i {
+    font-size: 25px;
+    color: var(--fondo-osc);
+    transition: color .0s ease;
+}
+.nav_ul li i:hover{
+    color: #0be40b;
+}
+.nav_ul li a{
     color: #ffffff;
     padding: 5px;
     text-decoration: none;
