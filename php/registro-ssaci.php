@@ -1,7 +1,7 @@
 <?php
 
 require_once 'conexion.php';
-if(!empty($_POST['btn_registar'])){
+if(!empty($_POST['boton-registar'])){
     if (empty($_POST['nombre']) or empty($_POST['correo']) or empty($_POST['edad']) or empty($_POST['codigo']) or empty($_POST['confirmar_codigo']) or empty($_POST['sexo'])){
         echo 'vacios';
     } else {
@@ -19,8 +19,8 @@ if(!empty($_POST['btn_registar'])){
             $guardar = mysqli_query($db, $sql);
         
             if($guardar){
-               
-                header('location:../vistas/casa.php');
+                
+                header('location:../vistas/inicio.php');
                 echo '
                 <script>
                 alert("El usario se registro correctamente");

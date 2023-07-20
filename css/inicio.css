@@ -1,0 +1,26 @@
+.imagen_grande{
+    height: 450px;
+    background-image: url(../imagenes/estudiantes.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    background-position: center;
+}
+.cont-2{
+    margin-top: 10px;
+}
+.cont-2 .ssaci {
+    color: var(--color-logo);
+    font-size: 45px;
+    font-family: 'blanka';
+    font-weight: 800;
+}
+.cont-2 h2{
+    font-size: 45px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.cont-2 p{
+    width: 70%;
+}

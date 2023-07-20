@@ -5,3 +5,4 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/basic.css">
     <link rel="stylesheet" href="../css/minav.css">
+    <link rel="stylesheet" href="../css/footer.css">

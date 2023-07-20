@@ -1,4 +1,4 @@
-<form action="../php/registro.php" method="POST" class="caja-registro">
+<form action="../php/registro-ssaci.php" method="POST" class="caja-registro">
       <h2 class="titulo">Registrate en <span class="ssaci">SSACI</span></h2>
       <div class="campo">
         <label for="nombre">Nombre:
@@ -12,19 +12,19 @@
       </div>
       <div class="campo">
         <label for="edad">Edad:
-            <input type="number" class="input-edad" id="edad" name="edad" required max="100" min="1">
+            <input type="number" class="input-edad" id="edad" name="edad" required max="100" min="14">
         </label>
       </div>
       <div class="campo">
-        <label for="contrasena">Contraseña:</label>
-        <input type="password" class="input-codigo" id="codigo" name="codigo" required>
+        <label for="codigo">Contraseña:</label>
+        <input type="password" class="input-codigo" id="codigo" name="codigo" required  maxlength="10">
       </div>
       <div class="campo">
         <label for="confirmar-codigo">Confirmar Contraseña:</label>
-        <input type="password" class="input-conf-codigo" id="confirmar-codigo" name="confirmar_codigo" required>
+        <input type="password" class="input-conf-codigo" id="confirmar-codigo" name="confirmar_codigo" required maxlength="10">
       </div>
       
-      <div class="campo">
+      <div class="campo-sexo">
         <label for="sexo">Sexo:</label>
         <select id="sexo" class="input-sexo" name="sexo" required>
           <option value="">Seleccionar</option>
@@ -33,7 +33,6 @@
           <option value="otro">Otro</option>
         </select>
       </div>
-      <div class="campo">
-        <input class="btn-enviar-registro" name="btn_registar" type="submit" value="Enviar">
-      </div>
+      <input class="boton-registar" name="boton-registar" value="Registrarme" type="submit"></input>
+
     </form>

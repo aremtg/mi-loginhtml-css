@@ -1,59 +1,139 @@
 .contenido{
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
-.hoja{
-    width: 450px;
+.hoja {
+    background-color: var(--color-hoja);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(196, 196, 196);
+    border-top: none;
+}
+.div-fecha {
+    text-align: right;
+    margin-bottom: 0px;
+}
+.fecha {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--color-logo);
+}
+  
+.hoja label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+} 
+input[type="text"],
+select{
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: var(--color-inputs);
+    outline: none;
+}
+.div-ficha-ambiente{
     display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.div-ficha-ambiente div input{
+    width: 100px;
+}
+.hoja .div-hora {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.div-hora .hora {
+    font-size: 20px;
+    font-weight: bold;
+}
+.hoja .periodo {
+    background-color: #2196F3;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.periodo:hover {
+    background-color: #0f6ddb;
+} 
+#motivo {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    outline: none;
+}
+/* ------------------- */
+.div-botones{
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(204, 163, 243);
+    display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: .5rem;
-    border-radius: 20px;
-    padding:10px;
-    background-color:rgb(255, 255, 255);
+    gap: 1rem;
 }
-.hoja label{
-    font-weight: 600;
-}
-.hoja input{
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    color: rgb(132, 0, 255);
-    font-weight: 650;
-    background-color: rgb(185, 184, 235);
-    cursor:url("../imagenes/pencil.svg"), auto;
-}
-.hoja .salida{
-    width: 100px;
-    height: 20px;
-    background: rgb(212, 198, 198);
-    color: #000;
-}
-.hoja textarea{
-    border: none;
-}
-.btn-generar-imagen{
-    padding: 8px;
+.div-botones button{
+   color: #090909;
+    padding: .5rem 1.5rem;
+    font-size: 14px;
     border-radius: 10px;
-    border: none;
-    border-right: 3px solid #3a8005;
-    border-bottom: 4px solid #3a8005;
-    font-size: 20px;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 4px 4px 9px #bebebe;
     cursor: pointer;
-    background:  rgb(43, 179, 2);
-    color: white;
-}   
+}
+
+.div-botones button:active{
+    color: #666;
+    box-shadow: var(--sombra-dentro);
+}
+.btn_registro-aprendiz{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid gainsboro;
+    background-color: rgb(223, 223, 223);
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btn_registro-aprendiz input{
+    width: 30px;
+}
 /* la imagen generada */
 /* caja */
 .resultado{
-    width: 450px;
-    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 377px;
+    height: 524px;
+    border-radius: 5px;
     overflow: hidden;
+    box-shadow: 0px 1px 10px 1px #b5bef7,
+     -1px 1px 9px 0px #ffffff;
 }
 .resultado img{
-    aspect-ratio: 9/7;
+    aspect-ratio: 2/3;
     width: 100%;
     height: 100%;
 }

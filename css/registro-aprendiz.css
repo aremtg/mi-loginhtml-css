@@ -1,75 +1,72 @@
-body{
-    display: grid;
-    place-items: center;
+section:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+    background-color: aqua;
 }
 .caja-registro{
     width: 420px;
     text-align: center;
     padding: 15px;
     border-radius: 50px;
-    background: transparent;
+    background: var(--login-registro);
     box-shadow: var(--sombra);
 }
 .caja-registro .titulo{
+    text-align: center;
     font-size: 20px;
-    color: var(--fondo-osc);
+    color: var(--color-logo);
     display: flex;
-    flex-direction: column;
     margin-bottom: 20px;
-}
-.titulo .ssaci{
-    color: var(--fondo-osc);
-    font-size: 35px;
-    font-family: 'blanka';
-    font-weight: 800;
 }
 .caja-registro .campo{
     text-align: left;
     display: flex;
     flex-direction: column;
 }
-.campo label{
-    color: var(--fondo-osc);
-}
+.caja-registro .campo label{
+    color: var(--color-logo);
+} 
 .campo input{
+    width: 100%;
     outline: none;
     border: none;
     color: black;
+    background-color: #d8d8d8;
     border-radius: 10px;
-    padding: 0 6px;
+    padding: 4px 10px;
     font-size: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
-.input-edad{
+.campo .input-edad{
     width: 60px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    color: #333;
-    -moz-appearance: textfield;
-    appearance: textfield;
+}
+.campo-sexo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 .input-sexo{
     width: 100px;
     height: 30px;
     border: none;
     outline: none;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: rgb(179, 219, 219);
 }
-.btn-enviar-registro{
-    width: 70%;
+.boton-registar{
     color: #090909;
     padding: .5rem 1.5rem;
     font-size: 14px;
-    border-radius: 0.5em;
+    border-radius: 10px;
     background: #e8e8e8;
-    transition: all .3s;
+    border: 1px solid #e8e8e8;
     box-shadow: 4px 4px 9px #bebebe,
     -4px -4px 9px #ffffff;
     cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 20px;
+    transition: all .3s;
 }
+.boton-registar:active {
+    color: #666;
+    box-shadow: var(--sombra-dentro);
+   }

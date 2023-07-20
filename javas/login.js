@@ -1,48 +1,42 @@
-//modo oscuro
-const botonModo = document.querySelector(".boton-mode");
-botonModo.addEventListener("click", cambiarModo);
-
-function cambiarModo(){
-    const body = document.querySelector(".body");
-
-    body.classList.toggle("modo-noche");
-    if(body.classList.contains("modo-noche")){
-        botonModo.innerHTML = "<i class='bi bi-brightness-high-fill'></i>";
-        
-    }else{
-        botonModo.innerHTML = "<i class='bi bi-moon-fill'></i>" ;
-    } 
-}
 //  alerta personalizada
-function mensajeOlvideContrasena(){
+let botonIngresar = document.getElementById("boton-ingresar");
+let campoMensajes = document.getElementById("campo-mensajes");
 
-    let botonIngresar = document.getElementById("boton-ingresar");
-    botonIngresar.disabled = true;
-
-    let campoMensajes = document.getElementById("campo-mensajes");
-    
-    campoMensajes.innerHTML=`
+function mensajeOlvideContrasena() {
+  botonIngresar.disabled = true;
+  campoMensajes.innerHTML = `
     <div id="mensaje">
-    <a href="#">Reestablecer contraseña</a>
+      <a href="#">Reestablecer contraseña</a>
     </div>
-    <button id="boton-cerrar-mensaje">X</button>`;
+    <button id="cerrarMensaje">&times;</button>
+  `;
 
-    campoMensajes.style.display = "block";
-    let botonCerrar = document.getElementById("boton-cerrar-mensaje");
-    botonCerrar.addEventListener("click", cerrarMensaje);
+  campoMensajes.style.display = "block";
 
-    function cerrarMensaje(){
-    botonIngresar.disabled = false;
-    campoMensajes.style.display = "none";
-    }
+  if (botonIngresar.disabled === true) {
+    let botonCerrar = document.getElementById("cerrarMensaje");
+
+    document.addEventListener('click', function cerrarmensaje(event) {
+      if (event.target !== campoMensajes && event.target !== botonCerrar) {
+        // Código a ejecutar cuando el clic no se hace en los elementos especificados
+        botonIngresar.disabled = false;
+        campoMensajes.style.display = "none";
+      }
+    });
+  }
 }
-// animacion para pasar de login a registro desde login.php
+
+
+//para pasar de login a registro desde login.php
 function transicionRegistroLogin() {
     const cajaLogin = document.querySelector('.caja-login');
     const cajaRegistro = document.querySelector('.caja-registro');
     
-   cajaLogin.classList.toggle("ocultar");
-   cajaRegistro.classList.toggle("ver");
+    var textoBtn = document.querySelector(".btn-transicion");
+    textoBtn.textContent = textoBtn.textContent === "Ya tengo cuenta" ? "Registrarme" : "Ya tengo cuenta";
+  
+    cajaLogin.classList.toggle("ocultar");
+    cajaRegistro.classList.toggle("ver");
    
 }
   

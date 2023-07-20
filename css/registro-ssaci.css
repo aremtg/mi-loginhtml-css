@@ -1,0 +1,83 @@
+
+.caja-registro {
+    width: 355px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 50px;
+    background: var(--login-registro);
+    box-shadow: var(--sombra);
+  }
+.caja-registro .titulo {
+    font-size: 20px;
+    color: var(--color-logo);
+    margin-bottom: 20px;
+  }
+  
+.titulo .ssaci {
+    color: var(--color-logo);
+    font-size: 35px;
+    font-family: 'blanka';
+    font-weight: 800;
+}
+  
+.caja-registro .campo {
+    text-align: left;
+}
+  
+.campo label {
+    color: var(--color-logo);
+}
+  
+.campo input {
+    width: 100%;
+    outline: none;
+    border: none;
+    color: black;
+    background-color: #d8d8d8;
+    border-radius: 10px;
+    padding: 4px 10px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+  
+.campo .input-edad {
+    width: 60px;
+}
+  
+.campo .input-codigo,
+.campo .input-conf-codigo {
+    width: 100%;
+}
+  
+.campo-sexo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+  
+.input-sexo {
+    width: 100px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: rgb(192, 192, 192);
+}
+  
+.boton-registar{
+    color: #090909;
+    padding: .5rem 1.5rem;
+    font-size: 14px;
+    border-radius: 10px;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    box-shadow: 4px 4px 9px #bebebe,
+    -4px -4px 9px #ffffff;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all .3s;
+}
+.boton-registar:active {
+    color: #666;
+    box-shadow: var(--sombra-dentro);
+}

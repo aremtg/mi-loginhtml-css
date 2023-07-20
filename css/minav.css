@@ -1,63 +1,181 @@
-
-nav{
+header{
+    position: fixed;
     width: 95%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    height: 70px;
+    top: 0;
+    padding: 0 20px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: var(--sombra);
+
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    font-family: 'Poppins', sans-serif;
+    transition: all .5s;
+    z-index: 10000;
 }
-.caja-logo{
+.box_logo{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+.box_logo .ssaci{
+    color: var(--color-logo);
+    font-size: 30px;
+    font-family: 'blanka';
+    font-weight: 800;
+    margin-top: -10px;
+}
+.box_logo .separa_logos{
+    width: 4px;
+    background-color: rgb(85, 84, 84);
+    height: 50px;
+    border-radius: 5px;
+}
+.box_logo img{
+    width: 3rem;
+}
+/* ----navegador------ */
+nav{
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    padding: 5px;
-
+    padding: 0 10px;
 }
-.caja-logo span{
-    position: relative;
-    width: 4px;
-    height: 40px;
-    margin-left: 5px;
-    margin-right: 5px;
-    background-color: black;
-}
-.caja-logo .titulo {
-    color: var(--fondo-osc);
-    font-size: 25px;
-    font-family: 'blanka';
-    font-weight: 800;
-}
-.caja-logo .logo{
-    max-width: 45px;
-}
-.nav_ul{
-    margin-top: 10px;
-    margin-bottom: 0%;
-    flex: 1;
+.nav_list{
+    height: 100%;
     display: flex;
     align-items: center;
-    border-radius: 20px;
-    padding: 10px;
-    background: transparent;
-    box-shadow: var(--sombra);
+    gap: 2rem;
 }
-.nav_ul li{
+.nav_list li{
     list-style: none;
-    align-items: center;
 }
-.nav_ul li i {
-    font-size: 25px;
-    color: var(--fondo-osc);
-    transition: color .0s ease;
-}
-.nav_ul li i:hover{
-    color: #0be40b;
-}
-.nav_ul li a{
-    color: #ffffff;
-    padding: 5px;
+.nav_list li a{
+    font-size: 18px;
+    font-weight: 500;
     text-decoration: none;
+    color: black
 }
+/* termina navegador */
+header.abajo{
+    width: 100%;
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: rgb(255, 255, 255);
+    transition: all 1s;
+}
+/* para el menu hamburguesa */
+.btn_menuH{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+.btn_menuH span{
+    background: #201f1f;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    display: block;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.7s, width 0.5s ;
+}
+.btn_menuH .l1{
+    transform: translate(-50%, -12px);
+}
+.btn_menuH .l3{
+    transform: translate(-50%, 8px);
+}
+/* PARTE DE JAVASCRIPT */
+.btn_menuH.activo .l1{
+    transform: translate(-50%, -50%)rotate(45deg);
+}
+.btn_menuH.activo .l3{
+    transform: translate(-50%, -50%)rotate(-45deg);
+}
+.btn_menuH.activo .l2{
+    width: 0;
+}
+.boton-mode {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(181, 176, 252, 0.836);
+    border-radius: 60%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+}
+.boton-mode .icono-mode{
+   width: 20px;
+}
+/*icon sol y luna*/
+.boton-mode .bi-brightness-high-fill,.boton-mode .bi-moon-fill{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+@media only screen and (max-width: 600px) {
+    nav {
+        display: none;
+    }
+    /* Mostrar el botón del menú */
+    .btn_menuH {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        display: block;
+    }
+    nav.responsive {
+        display: block;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 60vh;
+        padding: 0;
+        background-color: #ffffff;
+        border-radius: 0 0 0 50%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: all 1s;
+      }
+    .nav_list{
+        top: 55px;
+        gap: 0;
+        height: max-content;
+        position: relative;
+        flex-direction: column;
+    }
+    .nav_list li{
+        height: 35px;
+        width: 100%;
+        text-align:left;
+    }
+    .nav_list li a{
+        padding-left: 5px;
+    }
+    .nav_list li:hover{
+        background-color: rgb(231, 231, 231);
+    }
+    .boton-mode {
+        margin-right: 30px;
+        z-index: 1111;
+        transition: all .7s;
+    }
+  }

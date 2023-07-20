@@ -11,7 +11,7 @@ $columnasAfectadas = mysqli_num_rows($query);
 
 #si la consulta encontro algo 
 if($columnasAfectadas == 1){
-    header("location: ../vistas/casa.php");
+    header("location: ../vistas/inicio.php");
 }else if($columnasAfectadas == 0){
     header("location: ../vistas/login.php");
     

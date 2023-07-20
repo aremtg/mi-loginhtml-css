@@ -1,25 +1,36 @@
-<nav>
-   <div class="caja-logo">
-   <h1 class="titulo">SSACI</h1>
-   <span></span>
-   <img src="../imagenes/logoSena.svg" class="logo" alt="logo">
-   </div>
-    <ul class="nav_ul">
-        <li>
-            <a href="casa.php">
-                <i class="fa-solid fa-house" id="icono_casa"></i>
-            </a>
-        </li>
-        <li>
-            <a href="papelito.php">
-                <i class="fa-regular fa-note-sticky" id="icono_crear"></i>
-            </a>
-        </li>
-        <li>
-            <a href="login.php">
-                <i class="fa-solid fa-arrow-right-from-bracket" id="icono_salir"></i>
-            </a>
-        </li>
-    </ul> 
-</nav>
+<header>
+    <div class="box_logo">
+        <span class="ssaci">SSACI</span>
+        <span class="separa_logos"></span>
+        <img src="../imagenes/logoSena.svg" class="logo" alt="logo">
+    </div>
+    <nav>
+        <ul class="nav_list">
+            <li>
+                <a href="inicio.php">
+                    Inicio
+                </a>
+            </li>
+            <li>
+                <a href="papelito.php">
+                   Papelito
+                </a>
+            </li>
+            <li>
+                <a href="login.php">
+                    Salir
+                </a>
+            </li>
+        </ul> 
+    </nav>
+    <div class="boton-mode" >
+    <input type="image" class="icono-mode" src="../imagenes/luna-icon.svg" alt="">
+    </div>
+    <button class="btn_menuH">
+                <span class="l1"></span>
+                <span class="l2"></span>
+                <span class="l3"></span>
+    </button>
+</header>
+
 <section class="contenido">

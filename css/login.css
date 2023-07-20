@@ -1,0 +1,138 @@
+body{
+    padding-top: 0;
+}
+.contenedor-login-registro{
+    width: 100%;
+    height: 90.4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.caja-login {
+    width: 340px;
+    height: max-content;
+    padding: 15px;
+    border-radius: 50px;
+    background: var(--login-registro);
+    box-shadow: var(--sombra-cajas);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.caja-login .titulo {
+    color: var(--color-logo);
+    font-size: 35px;
+    font-family: 'blanka';
+    font-weight: 800;
+    padding-bottom: 15px;
+}
+/*como cada cajita donde estan los imput contra y usuario*/
+.caja-login label{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+}
+.caja-login label img{
+    width: 20px;
+    color: rgb(216, 24, 24);
+}
+.caja-login label input {
+    width: 90%;
+    outline: none;
+    border: none;
+    color: black;
+    background-color: #d8d8d8;
+    border-radius: 10px;
+    padding: 4px 10px;
+    font-size: 14px;
+}
+.caja-login label input::placeholder {
+    color: rgb(155, 155, 155);
+}
+.caja-login a{
+    color: var(--color-logo);
+    font-size: 14px;
+}
+.caja-login a:hover{
+    text-decoration-line:underline;
+}
+#boton-ingresar{
+    color: #090909;
+    padding: .5rem 1.5rem;
+    font-size: 14px;
+    border-radius: 10px;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 4px 4px 9px #bebebe,
+    -4px -4px 9px #ffffff;
+    cursor: pointer;
+}
+#boton-ingresar:active {
+    color: #666;
+    box-shadow: var(--sombra-dentro);
+   }
+.btn-transicion{
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    color: #090909;
+    padding: .5rem 1.5rem;
+    font-size: 14px;
+    border-radius: 10px;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    box-shadow: 4px 4px 9px #bebebe,
+    -4px -4px 9px #ffffff;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all .3s;
+}
+/* animacion */
+.caja-registro{
+ margin: 0;
+ display: none;
+}
+.ocultar{
+    display: none;
+}
+.ver{
+    display: block;
+}
+/*olvidaste tu contraseña*/
+#campo-mensajes{
+    width: 300px;
+    position: absolute;
+    top: 100px;
+    background:#9b70b4c2;
+    box-shadow:var(--sombra-cajas);
+    border-radius: 10px;
+    padding: 10px;
+    display: none;
+}  
+#campo-mensajes #mensaje{
+    width: 90%;
+    text-align: center;
+}
+#cerrarMensaje {
+    width: 20px;
+    height:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 27px;
+    color: rgb(255, 255, 255);
+    border: none;
+    background: rgb(0, 0, 0);
+    border:2px solid var(--fondo-tema);
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
